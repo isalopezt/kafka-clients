@@ -1,0 +1,6 @@
+- Start Kafka locally: `make up`
+- Stop Kafka locally: `make down`
+- Download dependencies: `make deps`
+- Build all binaries: `make build`
+- Build producer binary: `make build-producer`
+- Build consumer binary: `make build-consumer`
