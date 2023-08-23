@@ -1,10 +1,13 @@
-.PHONY: up down build build-producer build-consumer
+.PHONY: up down deps build build-producer build-consumer
 
 up:
 	docker compose up --detach
 
 down:
 	docker-compose down
+
+deps:
+	@go mod vendor
 
 build: build-producer build-consumer
 
